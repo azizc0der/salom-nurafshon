@@ -1,3 +1,160 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.degree {
+    position: absolute;
+    top: 120px;
+    right: 250px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0;
+    background: #474796;
+    border-radius: 50%;
+    -webkit-animation: pulse-phone 3s infinite;
+    display: flex;
+    animation: pulse-phone 3s infinite;
+    text-align: center;
+    width: 12vh;
+    height: 12vh;
+    color: #fff;
+    padding: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    border: 0.6vh solid #fff;
+}
+
+
+@-webkit-keyframes pulse-phone {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(39, 39, 79, .7);
+        box-shadow: 0 0 0 0px rgba(39, 39, 79, .7)
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0)
+    }
+}
+
+@keyframes pulse-phone {
+    0% {
+        -webkit-box-shadow: 0 0 0 0px rgba(39, 39, 79, .7);
+        box-shadow: 0 0 0 0px rgba(39, 39, 79, .7)
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0)
+    }
+}
+
+.phoneNumberHoverEffect:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    bottom: 0;
+    left: 50%; /* Position from the center */
+    transform: translateX(-50%) scaleX(0); /* Initially scale the element to 0 */
+    transform-origin: center; /* Set the transform origin to the center */
+    transition: all .3s ease-in-out 0s;
+}
+
+.phoneNumberHoverEffect:hover:before {
+    width: 100%; /* Expand the width to 100% */
+    transform: translateX(-50%) scaleX(1); /* Scale the element back to its original size */
+}
+
+/*SWIPER STYLES*/
+
+.swiper-button-next {
+    background-image: url("../assets/images/next-btn.png");
+    background-size: 25px
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 25px !important;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 25px !important
+}
+
+.swiper-button-prev {
+    background-image: url("../assets/images/prev-btn.png");
+    background-size: 25px
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    display: none
+}
+
+.swiper-pagination-bullet {
+    background: #fff !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .swiper-button-next, .swiper-button-prev {
+        background: none;
+    }
+}
+
+/*APARTMENTS STYLES*/
+
+.apartmentImage {
+    transition: all 0.8s ease;
+}
+
+.apartmentCard:hover .apartmentImage {
+    border-radius: 7px;
+    transform: scale(1.03);
+    transition: all 0.8s ease;
+}
+
+.apartmentCard:hover .apartmentName {
+    transition: all 0.8s ease;
+    color: #175BCD;
+}
+
+.apartmentCard:hover .apartmentSalePrice {
+    transition: all 0.3s ease;
+    background-color: #175BCD;
+}
+
+/*SCROLLBAR STYLES*/
+
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    display: none;
+    border-radius: 0px;
+}
+
+::-moz-scrollbar {
+    display: none;
+    width: 0px;
+}
+
+::-moz-scrollbar-track {
+    display: none;
+    border-radius: 0px;
+}
+
+::-moz-scrollbar-thumb {
+    display: none;
+    border-radius: 0px;
+}

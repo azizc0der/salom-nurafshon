@@ -6,7 +6,7 @@ import Logo from "@/assets/images/salom-nurafshon-logo.svg";
 import FlagRu from "@/assets/images/ru.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
-import {faBars, faPhoneVolume, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {faBars, faPhoneVolume, faTimes, faPhone} from "@fortawesome/free-solid-svg-icons";
 import DrawerUI from "@/components/UI/StyledDrawer";
 import {useState} from "react";
 
@@ -43,7 +43,7 @@ export default function Header() {
                         </button>
                         <div className={"flex items-center gap-[5px] hover:cursor-pointer"}>
                             <Image src={FlagRu} alt={"Flag"}/>
-                            <p className={""}>RU</p>
+                            <p className={"text-[14px]"}>RU</p>
                         </div>
                         <FontAwesomeIcon icon={faHeart} size={"sm"} className={"cursor-pointer"}/>
                     </div>
@@ -84,6 +84,9 @@ export default function Header() {
                     </div>
                 </div>
             </Wrapper>
+            <div className={"absolute rounded-[50%] bg-[#474796] h-[70px] w-[70px] sm:h-[80px] sm:w-[80px] top-[700px] sm:top-[620px] left-[20px] flex items-center justify-center"}>
+                <FontAwesomeIcon icon={faPhone} size={"2xl"} color={"white"} />
+            </div>
         </header>
     )
 }

@@ -2,7 +2,7 @@ import Wrapper from "@/components/UI/Wrapper";
 
 export default function Consultation() {
     return (
-        <div className={"pt-[30px] sm:pt-[50px] pb-[100px]"}>
+        <div className={"py-[30px] sm:pt-[50px] sm:pb-[100px]"}>
             <Wrapper>
                 <h2 className={"text-[20px] sm:text-[22px] font-bold"}>
                     Bepul konsultatsiya

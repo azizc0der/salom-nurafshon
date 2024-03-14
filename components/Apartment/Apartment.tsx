@@ -13,7 +13,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import SwiperImage1 from '@/assets/images/swiper-img-1.webp'
+import SwiperImage1 from '@/assets/images/union-3.jpg'
 import SwiperImage2 from '@/assets/images/swiper-img-2.webp'
 import Image from "next/image";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -28,13 +28,6 @@ const swiperData = [
     {
         image: SwiperImage2
     },
-    {
-        image: SwiperImage1
-    },
-    {
-        image: SwiperImage1
-    }
-
 ]
 
 export default function Apartment() {
@@ -54,14 +47,14 @@ export default function Apartment() {
                     swiperData.map((el: any, i: number) => (
                         <SwiperSlide key={i}>
                             <Image src={el.image} alt={"swiperImage"}
-                                   className={"overflow-hidden object-cover max-sm:h-[500px] h-full w-full"}/>
+                                   className={"max-sm:h-[500px] h-screen"}/>
                         </SwiperSlide>
                     ))
                 }
             </Swiper>
             <div>
                 <Wrapper>
-                    <div className={"absolute max-sm:top-[250px] top-[350px] z-[99] flex flex-col gap-[30px]"}>
+                    <div className={"absolute max-sm:top-[250px] top-[300px] z-[99] flex flex-col gap-[20px]"}>
                         <div className={"text-white font-bold text-[60px] max-sm:text-[32px]"}>Union</div>
                         <div className={"grid grid-cols-2 gap-[20px] text-white"}>
                             <div>

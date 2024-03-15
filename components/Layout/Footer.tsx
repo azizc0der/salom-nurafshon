@@ -32,7 +32,6 @@ export default function Footer() {
                             Service
                         </button>
                     </div>
-                    <hr/>
                     <div className={"hidden py-[50px] sm:grid sm:grid-cols-5 gap-[40px] sm:gap-[50px]"}>
                         <div className={"flex flex-col"}>
                             <div className={"text-[14px] font-bold mb-[15px]"}>Жилые комплексы</div>
@@ -158,16 +157,23 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className={"sm:hidden"}>
-                        <Accordion sx={{backgroundColor: "transparent", boxShadow: "none"}}>
+                        <Accordion sx={{
+                            margin: "0px!important",
+                            backgroundColor: "transparent",
+                            boxShadow: "none",
+                            borderTop: "1px solid #aaa!important",
+                            borderTopLeftRadius: "0px!important",
+                            borderTopRightRadius: "0px!important"
+                        }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon fontSize={"small"}/>}
                                 aria-controls="panel1-content"
                                 id="panel1-header"
-                                sx={{fontSize: "14px", fontWeight: "bold", margin: "0px"}}
+                                sx={{fontSize: "14px", fontWeight: "bold", margin: "0px", border: "transparent"}}
                             >
                                 Жилые комплексы
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{border: "transparent", paddingBottom: "20px!important"}}>
                                 <div className={"grid grid-cols-2 gap-[10px]"}>
                                     <a href={"#"} className={"hover:text-[#175BCD] text-[12px]"}>Union</a>
                                     <a href={"#"}
@@ -192,7 +198,14 @@ export default function Footer() {
                                 </div>
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion sx={{backgroundColor: "transparent", boxShadow: "none"}}>
+                        <Accordion sx={{
+                            margin: "0px!important",
+                            backgroundColor: "transparent",
+                            boxShadow: "none",
+                            borderTop: "1px solid #aaa!important",
+                            borderTopLeftRadius: "0px!important",
+                            borderTopRightRadius: "0px!important"
+                        }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon fontSize={"small"}/>}
                                 aria-controls="panel1-content"
@@ -201,7 +214,7 @@ export default function Footer() {
                             >
                                 Акции
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{border: "transparent", paddingBottom: "20px!important"}}>
                                 <div className={"grid grid-cols-2 gap-[10px]"}>
                                     <a href={"#"} className={"hover:text-[#175BCD] text-[12px]"}>Купи коммерческую
                                         недвижимость и получи Сертификат на семейный отдых в Amirsoy Mountain
@@ -213,7 +226,14 @@ export default function Footer() {
                                 </div>
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion sx={{backgroundColor: "transparent", boxShadow: "none"}}>
+                        <Accordion sx={{
+                            margin: "0px!important",
+                            backgroundColor: "transparent",
+                            boxShadow: "none",
+                            borderTop: "1px solid #aaa!important",
+                            borderTopLeftRadius: "0px!important",
+                            borderTopRightRadius: "0px!important"
+                        }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon fontSize={"small"}/>}
                                 aria-controls="panel1-content"
@@ -222,7 +242,7 @@ export default function Footer() {
                             >
                                 Новости
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{border: "transparent", paddingBottom: "20px!important"}}>
                                 <div className={"grid grid-cols-2 gap-[10px]"}>
                                     <a href={"#"} className={"hover:text-[#175BCD] text-[12px]"}>Стартовали продажи в
                                         третьем проекте в формате O`Z</a>
@@ -243,7 +263,14 @@ export default function Footer() {
                                 </div>
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion sx={{backgroundColor: "transparent", boxShadow: "none"}}>
+                        <Accordion sx={{
+                            margin: "0px!important",
+                            backgroundColor: "transparent",
+                            boxShadow: "none",
+                            borderTop: "1px solid #aaa!important",
+                            borderTopLeftRadius: "0px!important",
+                            borderTopRightRadius: "0px!important"
+                        }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon fontSize={"small"}/>}
                                 aria-controls="panel1-content"
@@ -252,7 +279,7 @@ export default function Footer() {
                             >
                                 Соц.сети
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{border: "transparent", paddingBottom: "20px!important"}}>
                                 <div className={"grid grid-cols-2 gap-[10px]"}>
                                     <a className={"flex items-center gap-[10px]"} href="https://www.facebook.com"
                                        aria-label="Facebook">
@@ -277,7 +304,15 @@ export default function Footer() {
                                 </div>
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion sx={{backgroundColor: "transparent", boxShadow: "none"}}>
+                        <Accordion sx={{
+                            margin: "0px!important",
+                            backgroundColor: "transparent",
+                            boxShadow: "none",
+                            borderTop: "1px solid #aaa!important",
+                            borderBottom: "1px solid #aaa!important",
+                            borderTopLeftRadius: "0px!important",
+                            borderTopRightRadius: "0px!important"
+                        }}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon fontSize={"small"}/>}
                                 aria-controls="panel1-content"
@@ -286,7 +321,7 @@ export default function Footer() {
                             >
                                 Контакты
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails sx={{border: "transparent", paddingBottom: "20px!important"}}>
                                 <div className={"grid gap-[10px]"}>
                                     <div>
                                         <div className={"text-[13px] font-bold"}>Мы расположены по адресу:</div>
@@ -329,18 +364,27 @@ export default function Footer() {
                                 </div>
                             </AccordionDetails>
                         </Accordion>
+                        <div className={"flex flex-col py-[30px] gap-[10px]"}>
+                            <p className={"sm:hidden text-[14px]"}>
+                                Есть жалобы и предложения?
+                            </p>
+                            <button
+                                className={"sm:hidden w-full bg-[#474796] hover:bg-[#175BCD] transition-all duration-300 hover:transition-all hover:duration-300 text-white text-[14px] h-[40px] rounded-[7px] font-bold"}>
+                                Service
+                            </button>
+                        </div>
                     </div>
-                    <div className={"py-[25px] sm:py-[50px] flex items-end justify-between"}>
-                        <div className={"w-[700px] text-[10px]"}>
+                    <div className={"pt-[25px] pb-[50px] sm:py-[50px] flex max-sm:flex-col items-center sm:items-end sm:justify-between max-sm: gap-[50px]"}>
+                        <div className={"text-[10px]"}>
                             Группа компаний Golden House © 2022 ООО «Golden House Development». Информация на сайте
-                            предоставлена в ознакомительных целях. Для получения более точной информации обратитесь к
+                            предоставлена в ознакомительных целях. Для <br/> получения более точной информации обратитесь к
                             менеджерам компании
                             <br/>
                             <br/>
                             Подробнее о получении скидки по телефону 78 113-04-60. Предложение не является публичной
                             офертой.
                         </div>
-                        <div className={"hidden sm:block text-[12px]"}>
+                        <div className={"text-[12px]"}>
                             Created by
                             <b>
                                 {" Azizxo'ja Saidrahmonov"}

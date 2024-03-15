@@ -76,11 +76,11 @@ export default function ApartmentHome() {
                         </div>
                         <div className={"flex items-center gap-[25px] mt-[20px]"}>
                             <button
-                                className={"text-white bg-[#474796] transition-all duration-300 hover:transition-all hover:duration-300 hover:bg-[#474796] rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center text-[14px]"}>
+                                className={"text-white bg-[#474796] transition-all duration-300 hover:transition-all hover:duration-300 hover:bg-[#474796] rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center gap-[5px] sm:gap-[10px] text-[12px] sm:text-[14px]"}>
                                 Оставить заявку
                             </button>
                             <button
-                                className={"text-[#474796] bg-white rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center gap-[10px] text-[14px]"}>
+                                className={"text-[#474796] bg-white rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center gap-[5px] sm:gap-[10px] text-[12px] sm:text-[14px]"}>
                                 <FontAwesomeIcon icon={faPhone}/>
                                 <div>Позвонить</div>
                             </button>

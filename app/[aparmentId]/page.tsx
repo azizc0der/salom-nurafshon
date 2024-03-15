@@ -1,9 +1,9 @@
-import Main from "@/components/Apartment/Main";
+import ApartmentContainer from "@/components/Apartment/ApartmentContainer";
 
 export default function Page() {
     return (
         <div>
-            <Main/>
+            <ApartmentContainer/>
         </div>
     )
 }

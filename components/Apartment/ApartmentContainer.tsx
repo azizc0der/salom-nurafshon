@@ -1,11 +1,11 @@
-import Apartment from "./Apartment";
+import ApartmentHome from "./ApartmentHome";
 import ApartmentInformation from "./ApartmentInformation";
 import ApartmentLocation from "@/components/Apartment/ApartmentLocation";
 
-export default function Main() {
+export default function ApartmentContainer() {
     return (
         <div>
-            <Apartment/>
+            <ApartmentHome/>
             <ApartmentInformation/>
             <ApartmentLocation/>
         </div>

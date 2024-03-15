@@ -30,7 +30,7 @@ const swiperData = [
     },
 ]
 
-export default function Apartment() {
+export default function ApartmentHome() {
 
     return (
         <div className={"pt-[80px] select-none relative"}>

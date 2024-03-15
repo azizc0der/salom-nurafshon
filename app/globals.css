@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+.aboutCompanyBg {
+    background: url("../assets/images/about.jpg") no-repeat;
+    background-size: cover;
+}
+
 .degree {
     position: absolute;
     top: 120px;

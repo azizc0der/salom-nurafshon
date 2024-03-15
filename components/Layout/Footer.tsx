@@ -16,7 +16,7 @@ export default function Footer() {
         <div className={"bg-[#f9f8f6]"}>
             <Wrapper>
                 <div className={""}>
-                    <div className={"py-[25px] sm:py-[50px] grid grid-cols-2 sm:grid-cols-4 place-items-center"}>
+                    <div className={"py-[25px] sm:py-[50px] grid grid-cols-2 sm:grid-cols-4 place-items-center sm:border-b"}>
                         <a href={"tel:+998781130354"}
                            className={"font-bold relative text-[20px] sm:text-[24px] phoneNumberHoverEffect"}>78
                             113-03-54</a>

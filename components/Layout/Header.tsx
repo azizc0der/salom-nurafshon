@@ -9,6 +9,7 @@ import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faBars, faPhoneVolume, faTimes, faPhone} from "@fortawesome/free-solid-svg-icons";
 import DrawerUI from "@/components/UI/StyledDrawer";
 import {useState} from "react";
+import Link from "next/link"
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -17,15 +18,15 @@ export default function Header() {
         <header className={"border-b fixed w-full bg-white z-[999]"}>
             <Wrapper>
                 <div className={"h-[80px] flex items-center justify-between"}>
-                    <div className={"cursor-pointer"}>
-                        <Image src={Logo} alt={"Logo"} className={"w-[150px]"}/>
-                    </div>
+                    <Link href={"/"} className={"cursor-pointer"}>
+                        <Image src={Logo} alt={"Logo"} className={"w-[150px] cursor-pointer"}/>
+                    </Link>
                     <ul className={"hidden sm:flex items-center gap-[25px] font-medium text-[14px]"}>
                         <li>
                             <a href={"#"} className={"hover:text-[#175BCD]"}>Квартиры</a>
                         </li>
                         <li>
-                            <a href={"#"} className={"hover:text-[#175BCD]"}>О компании</a>
+                            <a href={"/company"} className={"hover:text-[#175BCD]"}>О компании</a>
                         </li>
                         <li>
                             <a href={"#"} className={"hover:text-[#175BCD]"}>Новости</a>

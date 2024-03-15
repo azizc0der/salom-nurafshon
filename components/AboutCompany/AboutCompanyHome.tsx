@@ -8,7 +8,7 @@ import Wrapper from "@/components/UI/Wrapper";
 export default function AboutCompanyHome() {
     return (
         <div className={"relative"}>
-            <Image src={AboutCompanyImage} alt={"AboutCompanyImage"} className={"h-screen brightness-50"}/>
+            <Image src={AboutCompanyImage} alt={"AboutCompanyImage"} className={"h-screen w-full brightness-50"}/>
             <Wrapper>
                 <div className={"absolute max-sm:top-[250px] top-[300px] z-[99] flex flex-col gap-[20px] text-white"}>
                     <div className={"font-bold text-[40px]"}>
@@ -26,7 +26,7 @@ export default function AboutCompanyHome() {
                             Скачать презентацию
                         </button>
                         <button className={"bg-transparent rounded-[5px] font-medium border-none flex items-center justify-center gap-[10px] text-[14px]"}>
-                            <Image src={Building} alt={"Building"}/>
+                            <Image src={Building} alt={"Building"} className={"h-full w-full"}/>
                             <p className={"border-b border-white"}>
                                 Проекты
                             </p>

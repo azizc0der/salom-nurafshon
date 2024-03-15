@@ -8,10 +8,10 @@ import Wrapper from "@/components/UI/Wrapper";
 export default function AboutCompanyHome() {
     return (
         <div className={"relative"}>
-            <Image src={AboutCompanyImage} alt={"AboutCompanyImage"} className={"h-screen w-full brightness-50"}/>
+            <Image src={AboutCompanyImage} alt={"AboutCompanyImage"} className={"h-[80vh] max-sm:object-cover sm:h-screen w-full brightness-50"}/>
             <Wrapper>
                 <div className={"absolute max-sm:top-[250px] top-[300px] z-[99] flex flex-col gap-[20px] text-white"}>
-                    <div className={"font-bold text-[40px]"}>
+                    <div className={"font-bold text-[32px] sm:text-[40px]"}>
                         Golden House — искусство создавать
                     </div>
                     <p className={"text-[14px]"}>

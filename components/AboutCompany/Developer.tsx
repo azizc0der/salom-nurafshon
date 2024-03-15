@@ -10,7 +10,7 @@ export default function Developer() {
                 <div className={""}>
                     <p className={"text-[#474796] font-medium"}>Golden House</p>
                     <div className={"text-[25px] font-bold"}>Девелопер года — это про нас!</div>
-                    <div className={"mt-[25px] flex justify-between"}>
+                    <div className={"mt-[25px] flex max-sm:flex-col max-sm:items-center max-sm:gap-[30px] justify-between"}>
                         <div className={"flex flex-col gap-[30px]"}>
                             <p className={"text-[14px]"}>
                                 Golden House участвовал в открытом голосовании III Международного маркетингового

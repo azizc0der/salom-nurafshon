@@ -9,7 +9,7 @@ export default function Partners() {
                 <div className={""}>
                     <p className={"text-[#474796] font-medium"}>Golden House</p>
                     <div className={"text-[25px] font-bold"}>Партнёры</div>
-                    <div className={"mt-[25px] grid grid-cols-4"}>
+                    <div className={"mt-[25px] grid grid-cols-2 sm:grid-cols-4"}>
                         {
                             Array(16).fill("").map((_: any, i: number) => (
                                 <Image src={Partnerss} alt={"Partners"} key={i} className={"w-full"}/>

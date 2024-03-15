@@ -47,7 +47,7 @@ export default function ApartmentHome() {
                     swiperData.map((el: any, i: number) => (
                         <SwiperSlide key={i}>
                             <Image src={el.image} alt={"swiperImage"}
-                                   className={"max-sm:h-[500px] h-screen"}/>
+                                   className={"max-sm:h-[500px] max-sm:object-cover h-screen"}/>
                         </SwiperSlide>
                     ))
                 }

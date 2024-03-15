@@ -58,16 +58,16 @@ export default function Header() {
                             <div className={'px-5 flex flex-col gap-[100px] my-5 text-white'}>
                                 <ul className={"flex flex-col items-center gap-[25px] font-medium"}>
                                     <li>
-                                        <a href={"#"}>Bosh sahifa</a>
+                                        <a href={"#"}>Квартиры</a>
                                     </li>
                                     <li>
-                                        <a href={"#"}>Turar joy majmualari</a>
+                                        <a href={"/company"}>О компании</a>
                                     </li>
                                     <li>
-                                        <a href={"#"}>Konsultatsiya</a>
+                                        <a href={"#"}>Новости</a>
                                     </li>
                                     <li>
-                                        <a href={"#"}>Kontaktlar</a>
+                                        <a href={"#"}>Контакты</a>
                                     </li>
                                 </ul>
                                 <div className={"flex flex-col items-center justify-center font-medium gap-[25px]"}>
@@ -85,7 +85,7 @@ export default function Header() {
                     </div>
                 </div>
             </Wrapper>
-            <div className={"absolute rounded-[50%] bg-[#474796] h-[70px] w-[70px] sm:h-[80px] sm:w-[80px] top-[700px] sm:top-[620px] left-[20px] flex items-center justify-center"}>
+            <div className={"fixed rounded-[50%] bg-[#474796] h-[70px] w-[70px] sm:h-[80px] sm:w-[80px] top-[700px] sm:top-[620px] left-[20px] flex items-center justify-center"}>
                 <FontAwesomeIcon icon={faPhone} size={"2xl"} color={"white"} />
             </div>
         </header>

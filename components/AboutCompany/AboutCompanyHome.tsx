@@ -20,12 +20,12 @@ export default function AboutCompanyHome() {
                     </p>
                     <div className={"flex items-center gap-[25px] mt-[20px]"}>
                         <button
-                            className={"text-white bg-[#474796] transition-all duration-300 hover:transition-all hover:duration-300 hover:bg-[#474796] rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center gap-[10px] text-[14px]"}
+                            className={"text-white bg-[#474796] transition-all duration-300 hover:transition-all hover:duration-300 hover:bg-[#474796] rounded-[5px] py-[8px] px-[25px] sm:py-[1.6vh] sm:px-[4vh] font-medium border-none flex items-center justify-center gap-[5px] sm:gap-[10px] text-[12px] sm:text-[14px]"}
                         >
                             <FontAwesomeIcon icon={faArrowCircleDown}/>
                             Скачать презентацию
                         </button>
-                        <button className={"bg-transparent rounded-[5px] font-medium border-none flex items-center justify-center gap-[10px] text-[14px]"}>
+                        <button className={"bg-transparent rounded-[5px] font-medium border-none flex items-center justify-center gap-[5px] sm:gap-[10px] text-[12px] sm:text-[14px]"}>
                             <Image src={Building} alt={"Building"} className={"h-full w-full"}/>
                             <p className={"border-b border-white"}>
                                 Проекты

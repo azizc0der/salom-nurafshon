@@ -85,7 +85,7 @@ export default function Header() {
                     </div>
                 </div>
             </Wrapper>
-            <div className={"fixed rounded-[50%] bg-[#474796] h-[70px] w-[70px] sm:h-[80px] sm:w-[80px] top-[700px] sm:top-[620px] left-[20px] flex items-center justify-center"}>
+            <div className={"fixed rounded-[50%] bg-[#474796] h-[70px] w-[70px] sm:h-[80px] sm:w-[80px] top-[500px] sm:top-[620px] left-[20px] flex items-center justify-center"}>
                 <FontAwesomeIcon icon={faPhone} size={"2xl"} color={"white"} />
             </div>
         </header>
